@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[45,)"
+license = "All rights reserved"
+
+[[mods]]
+  modId = "jess"
+  version = "${file.jarVersion}"
+  displayName = "Just Enough Sculk Sensor"
+  # logoFile="icon.png"
+  credits="Lorexe"
+  authors = "Lorexe"
+  itemIcon="minecraft:painting"
+  description = "Display vibration frequency from sculk sensor into JEI/REI"
+
+[[dependencies.jess]]
+  modId = "forge"
+  mandatory = true
+  versionRange = "[45,)"
+  ordering = "NONE"
+  side = "BOTH"
+
+[[dependencies.jess]]
+  modId = "minecraft"
+  mandatory = true
+  versionRange = "[1.19.4,)"
+  ordering = "NONE"
+  side = "BOTH"
+
+[[dependencies.jess]]
+  modId = "jei"
+  mandatory = true
+  versionRange = "[13.1.0.6,)"
+  ordering = "AFTER"
+  side = "CLIENT"

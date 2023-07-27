@@ -10,6 +10,7 @@ import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -24,7 +25,7 @@ public class VibratorCategory implements IRecipeCategory<VibratorRecipe> {
     public VibratorCategory(IGuiHelper guiHelper) {
         this.icon = guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK,
                 new ItemStack((ItemLike) Items.SCULK_SENSOR));
-        this.background = (IDrawable) guiHelper.createBlankDrawable(150, 126);
+        this.background = (IDrawable) guiHelper.createBlankDrawable(150, 125);
     }
 
     public RecipeType<VibratorRecipe> getRecipeType() {
@@ -48,8 +49,8 @@ public class VibratorCategory implements IRecipeCategory<VibratorRecipe> {
                 .addItemStack(new ItemStack((ItemLike) Items.COMPARATOR));
     }
 
-    public void draw(VibratorRecipe recipe, IRecipeSlotsView recipeSlotsView, PoseStack stack, double mouseX,
+    public void draw(VibratorRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics graphics, double mouseX,
             double mouseY) {
-        recipe.draw(recipeSlotsView, stack, mouseX, mouseY);
+        recipe.draw(recipeSlotsView, graphics, mouseX, mouseY);
     }
 }

@@ -30,5 +30,7 @@ public class JESSJEIPlugin implements IModPlugin {
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack((ItemLike) Items.SCULK_SENSOR),
                 new RecipeType[] { VibratorCategory.TYPE });
+        registration.addRecipeCatalyst(new ItemStack((ItemLike) Items.CALIBRATED_SCULK_SENSOR),
+                new RecipeType[] { VibratorCategory.TYPE });
     }
 }

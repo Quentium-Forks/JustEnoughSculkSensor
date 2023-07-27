@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[45,)"
+loaderVersion = "[47,)"
 license = "All rights reserved"
 
 [[mods]]
@@ -15,20 +15,20 @@ license = "All rights reserved"
 [[dependencies.jess]]
   modId = "forge"
   mandatory = true
-  versionRange = "[45,)"
+  versionRange = "[47,)"
   ordering = "NONE"
   side = "BOTH"
 
 [[dependencies.jess]]
   modId = "minecraft"
   mandatory = true
-  versionRange = "[1.19.4,)"
+  versionRange = "[1.20.1,)"
   ordering = "NONE"
   side = "BOTH"
 
 [[dependencies.jess]]
   modId = "jei"
   mandatory = true
-  versionRange = "[13.1.0.6,)"
+  versionRange = "[15.2.0.23,)"
   ordering = "AFTER"
   side = "CLIENT"
